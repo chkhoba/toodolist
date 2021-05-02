@@ -61,7 +61,7 @@ function deleteCheck(e){
 
 
     const itemm = e.target;
-    if(item.classList[0] === 'complete-btn' || 'fa-check'){
+    if(itemm.classList[0] === 'complete-btn' || 'fa-check'){
         const todoo = itemm.parentElement;
         todoo.classList.toggle('completed');
     }
