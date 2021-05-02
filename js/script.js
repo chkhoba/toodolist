@@ -53,13 +53,15 @@ function addTodo(event){
 
 function deleteCheck(e){
     const item = e.target;
-    if(item.classList[0] === 'trash-btn'){
+    if(item.classList[0] === 'trash-btn' || 'fa-trash'){
         const todo = item.parentElement;
         todo.remove();
     }
 
+
+
     const itemm = e.target;
-    if(item.classList[0] === 'complete-btn'){
+    if(item.classList[0] === 'complete-btn' || 'fa-check'){
         const todoo = itemm.parentElement;
         todoo.classList.toggle('completed');
     }
